@@ -1,0 +1,17 @@
+-- JavaDB Database setup
+-- JDBC URL: jdbc:derby://localhost:1527/Airplanes
+-- User: SPUB
+-- Password: SPUB
+
+DROP TABLE AIRPLANE;
+
+CREATE TABLE AIRPLANE (
+   	ID VARCHAR(20) NOT NULL, 
+   	Type VARCHAR(20), 
+        ENGINES INTEGER,
+	PRIMARY KEY (ID)
+);
+
+INSERT INTO AIRPLANE VALUES ('CI005','Boeing 747',4);
+INSERT INTO AIRPLANE VALUES ('CI007','Airbus A-380',6);
+INSERT INTO AIRPLANE VALUES ('CI009','MD-90',2);
